@@ -75,7 +75,7 @@ define(["exports"], function(exports) {
          return false;
        }
      } else {
-       return (ignore.indexOf(helper) !== -1);
+       return (ignore.indexOf(helper) !== -1 || helper.indexOf('-') !== -1);
      }
      return true;
   }
